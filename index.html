@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>TBC | SPA</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">TBC</a>
+
+        <div class="nav__menu">
+          <!-- Navigation -->
+          <ul class="nav__list">
+            <!-- Home -->
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+            <!-- Sobre -->
+            <li class="nav__item">
+              <a href="#sobre" class="nav__link">
+                <i class="bx bx-user"></i>
+              </a>
+            </li>
+            <!-- Habilidade -->
+            <li class="nav__item">
+              <a href="#habilidade" class="nav__link">
+                <i class='bx bx-laptop'></i>
+              </a>
+            </li>
+            <!-- Portfólio -->
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class='bx bx-devices'></i>
+              </a>
+            </li>
+             <!-- Depoimento -->
+             <li class="nav__item">
+              <a href="#depoimentos" class="nav__link">
+                <i class='bx bxs-chat'></i>
+              </a>
+            </li>
+            <!-- Contato -->
+            <li class="nav__item">
+              <a href="#contato" class="nav__link">
+                <i class="bx bx-message-square-detail"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Theme toggle -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__greeting">Olá eu sou</span>
+            <h1 class="home__name">TBC</h1>
+            <h3 class="home__education">Desenvolvedora Web</h3>
+
+            <div class="home__buttons">
+              <a href="#portfolio" class="button button--ghost">Meus Projetos</a>
+              <a href="#sobre" class="button">Sobre Mim</a>
+            </div>
+          </div>
+
+          <div class="home__handle">
+            <img
+              src="./assets/img/profile.png"
+              alt="Profile illustration"
+              class="home__img"
+            />
+          </div>
+
+          <div class="home__social">
+            <!-- LinkedIn -->
+            <a href="#" class="home__social-link">
+              <i class="bx bxl-linkedin-square"></i
+            ></a>
+            <!-- Github -->
+            <a href="#" class="home__social-link">
+              <i class="bx bxl-github"></i
+            ></a>
+            <!-- Twitter -->
+            <a href="#" class="home__social-link">
+              <i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+
+          <a href="#sobre" class="home__scroll">
+            <i class="bx bx-mouse home__scroll-icon"></i>
+            <span class="home__scroll-name" style="margin-top: 13px;">Rolar para baixo</span>
+          </a>
+        </div>
+      </section>
+
+      <!--=============== Sobre ===============-->
+      <section class="about section" id="sobre">
+        <span class="section__subtitle">Introdução</span>
+        <h2 class="section__title">Sobre Mim</h2>
+
+        <div class="about__container container grid">
+          <img
+            src="./assets/img/about.png"
+            alt="about section image"
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <div class="about__info">
+              <!-- Experience -->
+              <div class="about__box">
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">Experiência</h3>
+                <span class="about__subtitle">8+ anos</span>
+              </div>
+              <!-- Projects -->
+              <div class="about__box">
+                <i class="bx bx-briefcase-alt about__icon"></i>
+                <h3 class="about__title">Concluído</h3>
+                <span class="about__subtitle">15+ Projetos</span>
+              </div>
+              <!-- Support -->
+              <div class="about__box">
+                <i class="bx bx-support about__icon"></i>
+                <h3 class="about__title">Apoio, suporte</h3>
+                <span class="about__subtitle">24/7</span>
+              </div>
+            </div>
+
+            <p class="about__description">
+              Sou profissional de Design e Tecnologia, faço serviços relacionados a Aplicativos para celular, redes sociais, Marketing Online, Desenvolvimento de Sites e Sistemas, Ux - Ui Design, Desenvolvimento de Games, Automação Comercial, Conectividade e Redes.
+            </p>
+            <a href="#contato" class="button">Entrar em Contato</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Habilidades ===============-->
+      <section class="skills section" id="habilidade">
+        <span class="section__subtitle">Minhas Habilidades</span>
+        <h2 class="section__title">Minhas Experiências</h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__content">
+            <h3 class="skills__title">Desenvolvimento Front-end</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">HTML5</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">CSS3</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Git & GitHub</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">Desenvolvimento de back-end</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">JAVA</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">C#</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">SQL</h3>
+                    <span class="skills__level">Intermediário</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Avançado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Serviços ===============-->
+      <section class="services section">
+        <span class="section__subtitle">Meus Serviços</span>
+        <h2 class="section__title">O que eu ofereço</h2>
+
+        <div class="services__container container grid">
+          <!-- Web developer -->
+          <div class="services__card">
+            <h3 class="services__title">Desenvolvedor Web</h3>
+            <span class="services__button"
+              >Ver mais <i class="bx bx-right-arrow-alt services__icon"></i
+            ></span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">Desenvolvedor Web</h3>
+                <p class="services__modal-description">
+                  Desenvolvedor web é capaz de projetar, criar e manter sites e aplicativos web a partir de um design de interface web. O termo é amplamente utilizado e pode incluir qualquer desenvolvedor cujo trabalho suporte a um website.
+                </p>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Front-end</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Back-end</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Database</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">APIs</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Ui/Ux -->
+          <div class="services__card">
+            <h3 class="services__title">Designer de UI e UX</h3>
+            <span class="services__button"
+              >Ver mais <i class="bx bx-right-arrow-alt services__icon"></i
+            ></span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">Designer de UI e UX</h3>
+                <p class="services__modal-description">
+                  Designer UX (abreviação de User Experience ou “Experiência do Usuário”, em tradução literal) é responsável, como o próprio nome diz, por garantir que o design projetado atenda a todas as necessidades dos usuários, garantindo sua satisfação ao interagir com a empresa, plataformas ou marcas.
+                </p>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Designer de Web</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Projeto móvel</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Designer responsivo</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Designer de produto</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- DevOps -->
+          <div class="services__card">
+            <h3 class="services__title">Desenvolvedor DevOps</h3>
+            <span class="services__button"
+              >Ver mais <i class="bx bx-right-arrow-alt services__icon"></i
+            ></span>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">Desenvolvedor DevOps</h3>
+                <p class="services__modal-description">
+                  O profissional de DevOps promove a decisão da linguagem de programação a ser utilizada, o tipo de infraestrutura, entre outras questões com as equipes envolvidas. Também devem ser definidas as demandas e funções dos colaboradores, aplicando metodologias ágeis em seu processo.
+                </p>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">CI/CD</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Kubernetes</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Cloud Native</p>
+                  </li>
+                  <!--  -->
+                  <li class="services__modal-item">
+                    <i class="bx bx-check sevices__modal-icon"></i>
+                    <p class="services__modal-info">Computação de borda</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Portfólio ===============-->
+      <section class="work section" id="portfolio">
+        <span class="section__subtitle">Meu Portfólio</span>
+        <h3 class="section__title">Projetos Recentes</h3>
+
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">Tudo</span>
+          <span class="work__item" data-filter=".web">Web</span>
+          <span class="work__item" data-filter=".mobile">Mobile</span>
+          <span class="work__item" data-filter=".design">Designer</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix web">
+            <img
+              src="./assets/img/work1.jpg"
+              alt="work image"
+              class="work__img"
+            />
+            <h3 class="work__title">Designer de Web</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <!--  -->
+          <div class="work__card mix mobile">
+            <img
+              src="./assets/img/work2.jpg"
+              alt="work image"
+              class="work__img"
+            />
+            <h3 class="work__title">Designer do aplicativo</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <!--  -->
+          <div class="work__card mix design">
+            <img
+              src="./assets/img/work3.jpg"
+              alt="work image"
+              class="work__img"
+            />
+            <h3 class="work__title">UI framework</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <!--  -->
+          <div class="work__card mix web">
+            <img
+              src="./assets/img/work4.jpg"
+              alt="work image"
+              class="work__img"
+            />
+            <h3 class="work__title">Back-end API</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+          <!--  -->
+          <div class="work__card mix design">
+            <img
+              src="./assets/img/work5.jpg"
+              alt="work image"
+              class="work__img"
+            />
+            <h3 class="work__title">Computação de borda</h3>
+            <a href="#" class="work__button">
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Depoimentos ===============-->
+      <section id="depoimentos" class="testimonial section">
+        <span class="section__subtitle">O que meus clientes dizem</span>
+        <h3 class="section__title">Depoimentos</h3>
+
+        <div class="testimonial__container container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="./assets/img/testimonial2.png"
+                alt="testimonial image"
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Maria</h3>
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="./assets/img/testimonial1.png"
+                alt="testimonial image"
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Jhon</h3>
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="./assets/img/testimonial3.png"
+                alt="testimonial image"
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Minji</h3>
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--=============== Contato ===============-->
+      <section class="contact section" id="contato">
+        <h2 class="section__title">Entrar em Contato</h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Vamos bater um papo</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">E-mail</h3>
+                <span class="contact__card-data">tbc@tbc.com</span>
+                <a href="#" class="contact__button"
+                  >Me mande um e-mail
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i
+                ></a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bx-phone contact__card-icon"></i>
+                <h3 class="contact__card-title">Telefone</h3>
+                <span class="contact__card-data">(11)1234-5678</span>
+                <a href="#" class="contact__button"
+                  >Liga para mim
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i
+                ></a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bx-phone contact__card-icon"></i>
+                <h3 class="contact__card-title">Celular</h3>
+                <span class="contact__card-data">(11)12345-6789</span>
+                <a href="#" class="contact__button"
+                  >Liga para mim
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Envie-me suas dúvidas</h3>
+            <form action="" class="contact__form">
+              <div class="contact__form-div">
+                <label for="Name" class="contact__form-tag">Nome</label>
+                <input
+                  type="text"
+                  class="contact__form-input"
+                  placeholder="Seu nome"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label for="Email" class="contact__form-tag">E-mail</label>
+                <input
+                  type="email"
+                  class="contact__form-input"
+                  placeholder="Seu e-mail"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label for="" class="contact__form-tag">Mensagem</label>
+                <textarea
+                  name="Message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Sua Mensagem"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+              <button class="button">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">TBC</h1>
+
+        <ul class="footer__list">
+          <li><a href="#sobre" class="footer__link">Sobre</a></li>
+          <li><a href="#portfolio" class="footer__link">Portfólio</a></li>
+          <li><a href="#depoimentos" class="footer__link">Depoimentos</a></li>
+        </ul>
+
+        <ul class="footer__social">
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </ul>
+
+        <span class="footer__copy"
+          >&#169;  TBC. Todos os direitos reservados!</span
+        >
+      </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
